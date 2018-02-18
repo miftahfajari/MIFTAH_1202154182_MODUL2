@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/menu_mie1" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gambar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/gambar"
+        android:layout_toRightOf="@+id/gambar"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nama"
+        android:layout_alignStart="@+id/nama"
+        android:layout_below="@+id/nama"
+        android:text="Rp. 000" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/harga"
+        android:layout_alignStart="@+id/harga"
+        android:layout_below="@+id/harga" />
+</RelativeLayout>
+
